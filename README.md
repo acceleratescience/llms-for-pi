@@ -7,7 +7,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![GPL License][license-shield]][license-url] -->
-[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+[![GPLv3 License](https://img.shields.io/badge/License-Apache%202.0-brightgreen.svg)](https://opensource.org/license/apache-2-0)
 [![Issues](https://img.shields.io/github/issues-raw/acceleratescience/llms-for-pi.svg?maxAge=25000)](https://github.com/acceleratescience/llms-for-pi/issues)
 [![GitHub contributors](https://img.shields.io/github/contributors/acceleratescience/llms-for-pi.svg?style=flat)](https://github.com/acceleratescience/llms-for-pi/graphs/contributors)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/acceleratescience/llms-for-pi.svg?style=flat)](https://github.com/acceleratescience/llms-for-pi/pulls)
