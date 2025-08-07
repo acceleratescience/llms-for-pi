@@ -117,8 +117,6 @@ ollama run qwen2.5:1.5b
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Y
-
 <!-- CONTRIBUTING -->
 ## Contributing
 
