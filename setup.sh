@@ -15,7 +15,7 @@ curl -fsSL https://ollama.com/install.sh | sh
 
 # Get the ollama model
 ollama pull qwen2.5-0.5b
-ollama pull qwen2.5-1.5b
+# ollama pull qwen2.5-1.5b
 
 # To get other models, you can just do
 # ollama run <model_name>
