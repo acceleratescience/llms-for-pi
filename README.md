@@ -89,8 +89,20 @@ To see what the script does, look in the `setup.sh` file. But in short, it will 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+The only thing that you need to do is activate the virtual environment that was installed:
+
+```bash
+source venv/bin/activate
+```
+
 ## Part 1: The notebook
-In the notebook `intro-to-qwen.ipynb` you will find a walkthrough in how to get models from Hugging Face.
+In the notebook `intro-to-qwen.ipynb` you will find a walkthrough in how to get models from Hugging Face. To run this notebook, run in the terminal:
+
+```bash
+jupyter lab
+```
+
+This will open Jupyter Lab, and you can find the notebook (among other things), in the file explorer on the left. If you're running this in VSCode, you can access the notebook directly, without running Jupyter Lab. The main reason for not using VSCode, or some other IDE, is due to the memory constraints of the Pi (assuming you're using the 4GB model).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
