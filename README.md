@@ -46,6 +46,7 @@
     <li><a href="#setup">Setup</a></li>
     <li><a href="#part-1-the-notebook">Part 1: The notebook</a></li>
     <li><a href="#part-2-ollama">Part 2: Ollama</a></li>
+    <li><a href="#further-reading">Further Reading</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
   </ol>
@@ -136,6 +137,11 @@ ollama run qwen2.5:1.5b
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Further Reading
+To browse other models, head over to [Hugging Face](https://huggingface.co/models).
+
+The also have a fantastic selection of [training courses](https://huggingface.co/learn).
 
 <!-- CONTRIBUTING -->
 ## Contributing
