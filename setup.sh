@@ -35,6 +35,16 @@ print_error() {
     echo -e "${RED}[ERROR]${NC} $1"
 }
 
+# Function to check command success and exit on failure
+check_success() {
+    if [ $? -eq 0 ]; then
+        print_success "$1"
+    else
+        print_error "$2"
+        exit 1
+    fi
+}
+
 # Welcome message
 echo ""
 echo -e "${PURPLE}╔═══════════════════════════════════════╗${NC}"
@@ -47,22 +57,27 @@ echo ""
 print_header "Setting up Python Virtual Environment"
 print_status "Creating virtual environment..."
 python3 -m venv venv
+check_success "Virtual environment created!" "Failed to create virtual environment. Make sure Python 3 is installed."
 
 print_status "Activating virtual environment..."
 source venv/bin/activate
-print_success "Virtual environment activated!"
+check_success "Virtual environment activated!" "Failed to activate virtual environment."
 
 # Install requirements
 print_header "Installing Python Dependencies"
 print_status "Installing packages from requirements.txt..."
+if [ ! -f "requirements.txt" ]; then
+    print_error "requirements.txt file not found!"
+    exit 1
+fi
 pip install -r requirements.txt --no-cache-dir
-print_success "Python dependencies installed!"
+check_success "Python dependencies installed!" "Failed to install Python dependencies. Check your internet connection and requirements.txt file."
 
 # Download model weights for the notebook
 print_header "Downloading AI Model Weights"
 print_status "Downloading Qwen2.5-0.5B-Instruct model from Hugging Face..."
 huggingface-cli download 'Qwen/Qwen2.5-0.5B-Instruct'
-print_success "Model weights downloaded!"
+check_success "Model weights downloaded!" "Failed to download model weights. Check your internet connection and Hugging Face CLI installation."
 
 # Download ollama
 print_header "Installing Ollama"
@@ -70,13 +85,13 @@ print_status "Ollama installation requires administrator privileges."
 print_warning "You may be prompted for your password..."
 print_status "Downloading and installing Ollama..."
 curl -fsSL https://ollama.com/install.sh | sh
-print_success "Ollama installed!"
+check_success "Ollama installed!" "Failed to install Ollama. Check your internet connection and permissions."
 
 # Get the ollama model
 print_header "Setting up Ollama Models"
 print_status "Downloading Qwen2.5:0.5b model for Ollama..."
 ollama pull qwen2.5:0.5b
-print_success "Qwen2.5:0.5b model ready!"
+check_success "Qwen2.5:0.5b model ready!" "Failed to download Qwen2.5:0.5b model. Make sure Ollama is running and you have internet access."
 
 # ollama pull qwen2.5:1.5b
 
