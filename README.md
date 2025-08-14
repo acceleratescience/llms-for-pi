@@ -96,6 +96,10 @@ source venv/bin/activate
 ```
 
 ## Part 1: The notebook
+<a target="_blank" href="https://colab.research.google.com/github/acceleratescience/llms-for-pi/blob/main/intro-to-qwen.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
 In the notebook `intro-to-qwen.ipynb` you will find a walkthrough in how to get models from Hugging Face. To run this notebook, run in the terminal:
 
 ```bash
@@ -107,6 +111,10 @@ This will open Jupyter Lab, and you can find the notebook (among other things), 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Part 2: Ollama
+<a target="_blank" href="https://colab.research.google.com/github/acceleratescience/llms-for-pi/blob/main/ollama-colab.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
 <div align="center">
   <a href="https://acceleratescience.github.io/">
     <img src="./assets/ollama-logo.png" alt="Logo" height=80>
